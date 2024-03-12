@@ -16,12 +16,10 @@ if (today.getDay() ===6 || today.getDay() ===0){
 }else {
     res.send("boo!! i have to work")
 }
-
-
-
-
 })
 
-app.listen(3000, function(){
-    console.log("our server is running on port 3000")
+const port = 3000 
+
+app.listen(port || 4000, function(){
+    console.log(`Our server is running on ${port}`)
 })
